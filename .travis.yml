@@ -15,7 +15,7 @@ services:
   - docker
 
 jdk:
-  - oraclejdk8
+  - oraclejdk9
 
 before_install:
   - mkdir -p $HOME/.gradle/ && openssl aes-256-cbc -K $encrypted_4c209f73aa5c_key -iv $encrypted_4c209f73aa5c_iv -in gradle.properties.enc -out $HOME/.gradle/gradle.properties -d || true
@@ -42,3 +42,8 @@ deploy:
       repo: mapfish/mapfish-print
       java: oraclejdk8
       all_branches: true
+
+notifications:
+  email:
+    recipients:
+      - stephane.brunner@camptocamp.com
