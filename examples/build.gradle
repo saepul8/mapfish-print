@@ -3,18 +3,24 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent
 apply plugin: 'war'
 apply plugin: 'org.gretty'
 
-def geoserverVersion = "2.15.2"
+def geoserverVersion = "2.15.3"
+buildscript {
+    repositories {
+        maven { url 'https://repo.boundlessgeo.com/main' }
+        jcenter()
+    }
+}
 
 repositories {
-    maven { url 'http://repo.boundlessgeo.com/main' }
-    maven { url 'http://maven.restlet.org' }
+    maven { url 'https://repo.boundlessgeo.com/main' }
+    maven { url 'https://maven.restlet.org' }
     jcenter()
 }
 
 dependencies {
     compileOnly "org.geoserver.web:gs-web-app:$geoserverVersion"
     testCompile(
-            project(':core')
+        project(':core')
     )
 }
 
