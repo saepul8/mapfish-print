@@ -48,7 +48,7 @@ public final class HostnameMatcher extends HostMatcher {
     private boolean allowSubDomains = false;
 
     /* (non-Javadoc)
-     * @see org.mapfish.print.config.ConfigurationObject#validate(java.util.List, org.mapfish.print.config
+     * @see #org.mapfish.print.config.ConfigurationObject#validate(java.util.List, org.mapfish.print.config
      * .Configuration)
      */
     @Override

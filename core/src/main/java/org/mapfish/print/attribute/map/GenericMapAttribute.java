@@ -236,7 +236,7 @@ public abstract class GenericMapAttribute
      * <p>
      *
      * @param zoomLevelSnapStrategy the value
-     * @see ZoomLevelSnapStrategy
+     * @see #ZoomLevelSnapStrategy
      */
     public final void setZoomLevelSnapStrategy(final ZoomLevelSnapStrategy zoomLevelSnapStrategy) {
         this.zoomLevelSnapStrategy = zoomLevelSnapStrategy;

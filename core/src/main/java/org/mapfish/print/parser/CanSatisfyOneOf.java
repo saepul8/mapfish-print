@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
  * <p></p>
  * If this annotation is present then {@link org.mapfish.print.parser.HasDefaultValue} is not required.
  *
- * @see org.mapfish.print.parser.OneOf
+ * @see #org.mapfish.print.parser.OneOf
  */
 @Target(value = ElementType.FIELD)
 @java.lang.annotation.Retention(java.lang.annotation.RetentionPolicy.RUNTIME)

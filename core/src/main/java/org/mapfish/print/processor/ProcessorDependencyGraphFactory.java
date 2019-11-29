@@ -85,8 +85,8 @@ public final class ProcessorDependencyGraphFactory {
      *
      * @param processors The processors
      * @param initialAttributes The attributes
-     * @see RequireAttributes
-     * @see ProvideAttributes
+     * @see #RequireAttributes
+     * @see #ProvideAttributes
      */
     public static void fillProcessorAttributes(
             final List<Processor> processors,

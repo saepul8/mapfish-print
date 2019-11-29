@@ -64,8 +64,8 @@ public final class HttpProxy extends HttpCredential {
      * Matchers are used to choose which requests this proxy applies to.
      *
      * @param matchers the matchers to use to determine which requests the applies can be used for
-     * @see org.mapfish.print.processor.http.matcher.URIMatcher
-     * @see org.mapfish.print.processor.http.RestrictUrisProcessor
+     * @see #org.mapfish.print.processor.http.matcher.URIMatcher
+     * @see #org.mapfish.print.processor.http.RestrictUrisProcessor
      */
     public void setMatchers(final List<? extends URIMatcher> matchers) {
         super.setMatchers(matchers);

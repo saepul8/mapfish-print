@@ -210,7 +210,7 @@ public class Configuration implements ConfigurationObject {
     /**
      * Get the http proxies used by in all requests in this syste.
      *
-     * @see org.mapfish.print.http.ConfigFileResolvingHttpRequestFactory
+     * @see #org.mapfish.print.http.ConfigFileResolvingHttpRequestFactory
      */
     public final List<HttpProxy> getProxies() {
         return this.proxies;
@@ -693,7 +693,7 @@ public class Configuration implements ConfigurationObject {
      *
      * @param matchers the list of matcher to use to check if a referer is permitted or null for no
      *         check
-     * @see org.mapfish.print.processor.http.matcher.URIMatcher
+     * @see #org.mapfish.print.processor.http.matcher.URIMatcher
      */
     public final void setAllowedReferers(@Nullable final List<? extends URIMatcher> matchers) {
         this.allowedReferers = matchers != null ? new UriMatchers(matchers) : null;

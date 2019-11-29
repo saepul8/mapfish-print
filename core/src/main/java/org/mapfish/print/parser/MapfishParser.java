@@ -39,8 +39,8 @@ import static org.mapfish.print.parser.ParserUtils.getAttributeNames;
  * There is a more explicit explanation in
  * {@link org.mapfish.print.attribute.ReflectiveAttribute#createValue(org.mapfish.print.config.Template)}
  *
- * @see org.mapfish.print.attribute.ReflectiveAttribute
- * @see org.mapfish.print.map.MapLayerFactoryPlugin
+ * @see #org.mapfish.print.attribute.ReflectiveAttribute
+ * @see #org.mapfish.print.map.MapLayerFactoryPlugin
  */
 public final class MapfishParser {
     private static final Logger LOGGER = LoggerFactory.getLogger(MapfishParser.class);
