@@ -30,7 +30,7 @@ import javax.annotation.Nullable;
 import javax.annotation.PostConstruct;
 
 /**
- * A {@link org.mapfish.print.MapPrinterFactory} that reads configuration from files and uses servlet's
+ * A {@ link org.mapfish.print.MapPrinterFactory} that reads configuration from files and uses servlet's
  * methods for resolving the paths to the files.
  * <p></p>
  */

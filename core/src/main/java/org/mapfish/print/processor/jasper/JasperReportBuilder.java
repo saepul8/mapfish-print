@@ -182,7 +182,7 @@ public final class JasperReportBuilder extends AbstractProcessor<JasperReportBui
     }
 
     /**
-     * The input parameter object for {@link JasperReportBuilder}.
+     * The input parameter object for {@ link JasperReportBuilder}.
      */
     public static final class Input {
     }

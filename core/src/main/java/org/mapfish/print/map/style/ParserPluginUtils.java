@@ -26,7 +26,7 @@ public final class ParserPluginUtils {
     }
 
     /**
-     * Load data using {@link Configuration#loadFile(String)} and using http.  If
+     * Load data using {@ link Configuration#loadFile(String)} and using http.  If
      * data is able to be loaded it will be passed to the loadFunction to be turned into a style.
      *
      * @param clientHttpRequestFactory the factory to use for http requests

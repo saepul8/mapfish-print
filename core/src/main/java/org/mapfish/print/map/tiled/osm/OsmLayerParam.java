@@ -95,7 +95,7 @@ public final class OsmLayerParam extends AbstractTiledLayerParams {
     @HasDefaultValue
     public String imageExtension = "png";
     /**
-     * Custom query parameters to use when making http requests. {@link #customParams}.
+     * Custom query parameters to use when making http requests. {@ link #customParams}.
      * <p></p>
      * The json should look something like:
      * <pre><code>
@@ -135,7 +135,7 @@ public final class OsmLayerParam extends AbstractTiledLayerParams {
     }
 
     /**
-     * Read the {@link #customParams} into a Multimap.
+     * Read the {@ link #customParams} into a Multimap.
      */
     public Multimap<String, String> getCustomParams() {
         Multimap<String, String> result = convertToMultiMap(this.customParams);

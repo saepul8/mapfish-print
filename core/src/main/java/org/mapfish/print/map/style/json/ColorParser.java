@@ -54,7 +54,7 @@ public final class ColorParser {
     }
 
     /**
-     * Parse the string and convert it to a {@link java.awt.Color}.  See class description for details on the
+     * Parse the string and convert it to a {@ link java.awt.Color}.  See class description for details on the
      * supported color formats.
      *
      * @param colorString the color string encoded.

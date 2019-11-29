@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 import javax.annotation.PostConstruct;
 
 /**
- * Processes all {@link ConfigFileLoaderPlugin}s and loads the files.
+ * Processes all {@ link ConfigFileLoaderPlugin}s and loads the files.
  */
 public final class ConfigFileLoaderManager implements ConfigFileLoaderPlugin {
     @Autowired

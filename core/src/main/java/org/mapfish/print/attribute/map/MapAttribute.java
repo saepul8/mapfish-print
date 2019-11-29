@@ -21,7 +21,7 @@ import java.util.function.Function;
 import javax.annotation.Nonnull;
 
 /**
- * <p>The attributes for {@link CreateMapProcessor} (see
+ * <p>The attributes for {@ link CreateMapProcessor} (see
  * <a href="processors.html#!createMap">!createMap</a> processor).</p>
  * [[examples=verboseExample]]
  */
@@ -44,7 +44,7 @@ public final class MapAttribute extends GenericMapAttribute {
     }
 
     /**
-     * The value of {@link MapAttribute}.
+     * The value of {@ link MapAttribute}.
      */
     public class MapAttributeValues extends GenericMapAttributeValues {
 
@@ -243,9 +243,9 @@ public final class MapAttribute extends GenericMapAttribute {
         }
 
         /**
-         * Creates an {@link OverriddenMapAttributeValues}
+         * Creates an {@ link OverriddenMapAttributeValues}
          * instance with the current object and a given
-         * {@link OverviewMapAttributeValues}
+         * {@ link OverviewMapAttributeValues}
          * instance.
          *
          * @param paramOverrides Attributes set in this instance will override attributes in the
@@ -291,13 +291,13 @@ public final class MapAttribute extends GenericMapAttribute {
     }
 
     /**
-     * A wrapper around a {@link MapAttributeValues} instance and an
-     * {@link OverviewMapAttributeValues}
+     * A wrapper around a {@ link MapAttributeValues} instance and an
+     * {@ link OverviewMapAttributeValues}
      * instance, which is used to render the overview map.
      * <p>
      * If attributes on the
-     * {@link OverviewMapAttributeValues}
-     * instance are set, those attributes will be returned, otherwise the ones on {@link MapAttributeValues}.
+     * {@ link OverviewMapAttributeValues}
+     * instance are set, those attributes will be returned, otherwise the ones on {@ link MapAttributeValues}.
      */
     public class OverriddenMapAttributeValues extends MapAttributeValues {
 

@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Class for logging the values in a {@link org.mapfish.print.output.Values} object.
+ * Class for logging the values in a {@ link org.mapfish.print.output.Values} object.
  */
 public final class ValuesLogger {
     private static final Logger LOGGER = LoggerFactory.getLogger(ValuesLogger.class);

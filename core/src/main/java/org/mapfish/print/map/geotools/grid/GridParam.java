@@ -36,9 +36,9 @@ public final class GridParam extends AbstractLayerParams {
     /**
      * The x,y spacing between grid lines.
      * <p></p>
-     * Either {@link #spacing} or {@link #numberOfLines}
+     * Either {@ link #spacing} or {@ link #numberOfLines}
      * <p></p>
-     * If spacing is defined then {@link #origin} must also be defined
+     * If spacing is defined then {@ link #origin} must also be defined
      */
     @OneOf("spacing")
     @Requires("origin")
@@ -47,7 +47,7 @@ public final class GridParam extends AbstractLayerParams {
     /**
      * The x,y point of grid origin.
      * <p></p>
-     * This is required if {@link #spacing} is defined.
+     * This is required if {@ link #spacing} is defined.
      */
     @HasDefaultValue
     public double[] origin;
@@ -64,9 +64,9 @@ public final class GridParam extends AbstractLayerParams {
      * style in the template or the configuration objects.
      * <p></p>
      * If no style is defined then the default grid style will be used.  The default will depend if the type
-     * is point or line and will respect {@link #gridColor} and {@link #haloColor} and {@link #haloRadius}. If
-     * {@link #gridType} is {@link GridType#POINTS} then the style will be crosses with a haloRadius sized
-     * halo around the cross.  If {@link GridType#LINES} then the style will be a dashed line with no halo.
+     * is point or line and will respect {@ link #gridColor} and {@ link #haloColor} and {@ link #haloRadius}. If
+     * {@ link #gridType} is {@ link GridType#POINTS} then the style will be crosses with a haloRadius sized
+     * halo around the cross.  If {@ link GridType#LINES} then the style will be a dashed line with no halo.
      * <p></p>
      */
     @HasDefaultValue
@@ -74,7 +74,7 @@ public final class GridParam extends AbstractLayerParams {
     /**
      * Indicates if the layer is rendered as SVG.
      * <p></p>
-     * (will default to {@link org.mapfish.print.config.Configuration#defaultToSvg}).
+     * (will default to {@ link org.mapfish.print.config.Configuration#defaultToSvg}).
      */
     @HasDefaultValue
     public Boolean renderAsSvg = false;
@@ -239,7 +239,7 @@ public final class GridParam extends AbstractLayerParams {
     /**
      * Determine which unit to use when creating grid labels.
      *
-     * @param mapCrs the crs of the map, used if the {@link #labelProjection} is not defined.
+     * @param mapCrs the crs of the map, used if the {@ link #labelProjection} is not defined.
      */
     public String calculateLabelUnit(final CoordinateReferenceSystem mapCrs) {
         String unit;
@@ -255,7 +255,7 @@ public final class GridParam extends AbstractLayerParams {
     /**
      * Determine which math transform to use when creating the coordinate of the label.
      *
-     * @param mapCrs the crs of the map, used if the {@link #labelProjection} is not defined.
+     * @param mapCrs the crs of the map, used if the {@ link #labelProjection} is not defined.
      */
     public MathTransform calculateLabelTransform(final CoordinateReferenceSystem mapCrs) {
         MathTransform labelTransform;

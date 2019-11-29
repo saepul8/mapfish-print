@@ -18,7 +18,7 @@ public abstract class AbstractVectorLayerParam extends AbstractLayerParams {
     /**
      * Indicates if the layer is rendered as SVG.
      * <p></p>
-     * (will default to {@link org.mapfish.print.config.Configuration#defaultToSvg}).
+     * (will default to {@ link org.mapfish.print.config.Configuration#defaultToSvg}).
      */
     @HasDefaultValue
     public Boolean renderAsSvg;

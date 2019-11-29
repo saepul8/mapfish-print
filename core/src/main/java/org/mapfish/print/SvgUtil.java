@@ -19,7 +19,7 @@ public final class SvgUtil {
     }
 
     /**
-     * Renders an SVG image into a {@link BufferedImage}.
+     * Renders an SVG image into a {@ link BufferedImage}.
      *
      * @param svgFile the svg file
      * @param width the width
@@ -41,7 +41,7 @@ public final class SvgUtil {
     }
 
     /**
-     * An image transcoder which allows to retrieve an {@link BufferedImage}.
+     * An image transcoder which allows to retrieve an {@ link BufferedImage}.
      */
     private static class BufferedImageTranscoder extends ImageTranscoder {
 

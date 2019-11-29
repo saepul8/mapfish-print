@@ -73,7 +73,7 @@ public final class FileUtils {
 
 
     /**
-     * Verify that the file is within the base directory. {@link org.mapfish.print.IllegalFileAccessException}
+     * Verify that the file is within the base directory. {@ link org.mapfish.print.IllegalFileAccessException}
      * will be thrown if the assertion does not hold.
      *
      * @param descriptorOfBase a simple description of the base file, for example: configuration

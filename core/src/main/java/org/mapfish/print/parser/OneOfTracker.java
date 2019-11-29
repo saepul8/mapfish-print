@@ -19,7 +19,7 @@ final class OneOfTracker {
     private Map<String, OneOfGroup> mapping = new HashMap<>();
 
     /**
-     * Check if a field is part of a  {@link org.mapfish.print.parser.OneOf} relationship and add if
+     * Check if a field is part of a  {@ link org.mapfish.print.parser.OneOf} relationship and add if
      * necessary.
      *
      * @param field the field to register.
@@ -48,7 +48,7 @@ final class OneOfTracker {
     }
 
     /**
-     * Check if a field is part of a {@link org.mapfish.print.parser.OneOf} relationship and mark the group as
+     * Check if a field is part of a {@ link org.mapfish.print.parser.OneOf} relationship and mark the group as
      * satisfied.
      *
      * @param field the field that is done.

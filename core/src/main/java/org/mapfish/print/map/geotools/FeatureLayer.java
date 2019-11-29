@@ -42,7 +42,7 @@ public final class FeatureLayer extends AbstractFeatureSourceLayer {
     }
 
     /**
-     * Parser for creating {@link org.mapfish.print.map.geotools.FeatureLayer} layers from request data.
+     * Parser for creating {@ link org.mapfish.print.map.geotools.FeatureLayer} layers from request data.
      */
     public static final class Plugin extends AbstractFeatureSourceLayerPlugin<FeatureLayerParam> {
 
@@ -143,7 +143,7 @@ public final class FeatureLayer extends AbstractFeatureSourceLayer {
         /**
          * Indicates if the layer is rendered as SVG.
          * <p></p>
-         * (will default to {@link org.mapfish.print.config.Configuration#defaultToSvg}).
+         * (will default to {@ link org.mapfish.print.config.Configuration#defaultToSvg}).
          */
         public Boolean renderAsSvg;
     }

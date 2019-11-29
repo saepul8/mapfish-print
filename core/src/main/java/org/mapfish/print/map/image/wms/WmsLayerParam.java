@@ -33,7 +33,7 @@ public class WmsLayerParam extends AbstractWMXLayerParams {
 
     /**
      * The styles to apply to the layers.  If this is defined there should be the same number as the layers
-     * and the style are applied to the layer in the {@link #layers} field.
+     * and the style are applied to the layer in the {@ link #layers} field.
      */
     @HasDefaultValue
     public String[] styles;

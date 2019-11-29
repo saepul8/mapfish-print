@@ -26,18 +26,18 @@ import javax.annotation.Nullable;
  * <p>
  * For example consider the case where the report should contain multiple tables or charts but the number of
  * reports may change depending on the request.  In this case the client will post a datasource attribute json
- * object containing an array of all the table attribute objects.  The {@link
+ * object containing an array of all the table attribute objects.  The {@ link
  * org.mapfish.print.processor.jasper.DataSourceProcessor} will process the datasource attribute and create a
  * Jasper datasource that contains all the tables.
  * </p>
  * <p>
  * This datasource must be used in tandem with the
- * {@link org.mapfish.print.processor.jasper.DataSourceProcessor}
+ * {@ link org.mapfish.print.processor.jasper.DataSourceProcessor}
  * processor (see <a href="processors.html#!createDataSource">!createDataSource</a> processor).
  * </p>
  * <p>
  * The json data of this attribute is special since it represents an array of attributes, each element in the
- * array must contain all of the attributes required to satisfy the processors in the {@link
+ * array must contain all of the attributes required to satisfy the processors in the {@ link
  * org.mapfish.print.processor.jasper.DataSourceProcessor}.
  * </p>
  * <p>
@@ -214,13 +214,13 @@ public final class DataSourceAttribute implements Attribute {
     }
 
     /**
-     * The value class for the {@link org.mapfish.print.attribute.DataSourceAttribute}.
+     * The value class for the {@ link org.mapfish.print.attribute.DataSourceAttribute}.
      */
     public static final class DataSourceAttributeValue {
         /**
          * The array of attribute data.  Each element in the array is the attribute data for one row in the
          * resulting datasource (as processed by
-         * {@link org.mapfish.print.processor.jasper.DataSourceProcessor})
+         * {@ link org.mapfish.print.processor.jasper.DataSourceProcessor})
          */
         public Map<String, Object>[] attributesValues;
     }

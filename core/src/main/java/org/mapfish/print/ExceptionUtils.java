@@ -10,10 +10,10 @@ public final class ExceptionUtils {
     }
 
     /**
-     * Returns a {@link RuntimeException} for the given exception.
+     * Returns a {@ link RuntimeException} for the given exception.
      *
      * @param exc An exception.
-     * @return A {@link RuntimeException}
+     * @return A {@ link RuntimeException}
      */
     public static RuntimeException getRuntimeException(final Throwable exc) {
         Throwable e = exc;

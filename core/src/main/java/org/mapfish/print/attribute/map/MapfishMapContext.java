@@ -13,7 +13,7 @@ import javax.annotation.Nullable;
 
 /**
  * Utility class that adjusts the bounds and the map size in case a rotation is set. Also it provides an
- * {@link AffineTransform} to render the layer graphics.
+ * {@ link AffineTransform} to render the layer graphics.
  */
 public final class MapfishMapContext {
 
@@ -199,7 +199,7 @@ public final class MapfishMapContext {
     /**
      * Get a nicely rounded scale for to use for displaying the map scale.
      * <p>
-     * One of the output parameters of the {@link org.mapfish.print.processor.map.CreateMapProcessor} is
+     * One of the output parameters of the {@ link org.mapfish.print.processor.map.CreateMapProcessor} is
      * 'mapContext' which can be accessed in a template.  If the scale is required in the template then it can
      * be accessed via:
      * <code>$P{mapContext}.getRoundedScaleDenominator()</code>
@@ -212,7 +212,7 @@ public final class MapfishMapContext {
     /**
      * Get a nicely rounded scale for to use for displaying the map scale.
      * <p>
-     * One of the output parameters of the {@link org.mapfish.print.processor.map.CreateMapProcessor} is
+     * One of the output parameters of the {@ link org.mapfish.print.processor.map.CreateMapProcessor} is
      * 'mapContext' which can be accessed in a template.  If the scale is required in the template then it can
      * be accessed via:
      * <code>$P{mapContext}.getRoundedScaleDenominato()</code>
@@ -277,7 +277,7 @@ public final class MapfishMapContext {
     }
 
     /**
-     * Returns an {@link AffineTransform} taking the rotation into account.
+     * Returns an {@ link AffineTransform} taking the rotation into account.
      *
      * @return an affine transformation
      */

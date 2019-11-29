@@ -11,9 +11,9 @@ import java.util.List;
 import javax.annotation.Nullable;
 
 /**
- * <p>A processor that wraps several {@link AbstractClientHttpRequestFactoryProcessor}s.</p>
+ * <p>A processor that wraps several {@ link AbstractClientHttpRequestFactoryProcessor}s.</p>
  * <p>
- * This makes it more convenient to configure multiple processors that modify {@link
+ * This makes it more convenient to configure multiple processors that modify {@ link
  * org.mapfish.print.http.MfClientHttpRequestFactory} objects.
  * </p>
  * <p>

@@ -11,7 +11,7 @@ import org.mapfish.print.wrapper.PObject;
 import java.util.Iterator;
 
 /**
- * Wrapper around the {@link org.json.JSONObject} class to have a better error management.
+ * Wrapper around the {@ link org.json.JSONObject} class to have a better error management.
  */
 public class PJsonObject extends PAbstractObject {
     private final JSONObject obj;

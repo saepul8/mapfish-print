@@ -60,9 +60,9 @@ public final class MergeDataSourceProcessor
      * <p>The <em>source</em> to add to the merged DataSource.</p>
      * <p>Each <em>source</em> indicates if it should be treated
      * as a datasource or as a single item to add to the merged DataSource. If the source indicates that it is
-     * a {@link org.mapfish.print.processor.jasper.MergeDataSourceProcessor.SourceType#DATASOURCE} the object
+     * a {@ link org.mapfish.print.processor.jasper.MergeDataSourceProcessor.SourceType#DATASOURCE} the object
      * each row in the datasource will be used to form a row in the merged DataSource.  If the source type is
-     * {@link org.mapfish.print.processor.jasper.MergeDataSourceProcessor.SourceType#SINGLE} the object will
+     * {@ link org.mapfish.print.processor.jasper.MergeDataSourceProcessor.SourceType#SINGLE} the object will
      * be a single row even if it is in fact a DataSource.</p>
      *
      * <p>See also: <a href="configuration.html#!mergeSource">!mergeSource</a></p>
@@ -236,7 +236,7 @@ public final class MergeDataSourceProcessor
     }
 
     /**
-     * The input object for {@link org.mapfish.print.processor.jasper.MergeDataSourceProcessor}.
+     * The input object for {@ link org.mapfish.print.processor.jasper.MergeDataSourceProcessor}.
      */
     public static class In {
         /**
@@ -246,7 +246,7 @@ public final class MergeDataSourceProcessor
     }
 
     /**
-     * The output object for {@link org.mapfish.print.processor.jasper.MergeDataSourceProcessor}.
+     * The output object for {@ link org.mapfish.print.processor.jasper.MergeDataSourceProcessor}.
      */
     public static class Out {
         /**
@@ -301,7 +301,7 @@ public final class MergeDataSourceProcessor
 
         /**
          * The type of source.  See
-         * {@link org.mapfish.print.processor.jasper.MergeDataSourceProcessor.SourceType}
+         * {@ link org.mapfish.print.processor.jasper.MergeDataSourceProcessor.SourceType}
          * for the options.
          *
          * @param type the type of source
@@ -312,7 +312,7 @@ public final class MergeDataSourceProcessor
 
         /**
          * The names of each field in the DataSource.  See
-         * {@link org.mapfish.print.processor.jasper.MergeDataSourceProcessor.SourceType}
+         * {@ link org.mapfish.print.processor.jasper.MergeDataSourceProcessor.SourceType}
          * for instructions on how to declare the fields
          *
          * @param fields the field names

@@ -89,7 +89,7 @@ public final class JasperReportImageOutputFormat extends AbstractJasperReportOut
     }
 
     /**
-     * One of {@link java.awt.image.BufferedImage} TYPE_ values.
+     * One of {@ link java.awt.image.BufferedImage} TYPE_ values.
      *
      * @param imageType the buffered image type to create.
      */

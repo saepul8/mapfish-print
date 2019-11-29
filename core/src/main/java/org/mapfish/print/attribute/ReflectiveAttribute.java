@@ -131,7 +131,7 @@ public abstract class ReflectiveAttribute<Value> implements Attribute {
     }
 
     /**
-     * Return the type created by {@link #createValue(Template)}.
+     * Return the type created by {@ link #createValue(Template)}.
      */
     public abstract Class<? extends Value> getValueType();
 
@@ -178,22 +178,22 @@ public abstract class ReflectiveAttribute<Value> implements Attribute {
      * The object will be populated from the json.  Each public field will be populated by looking up the
      * value in the json.
      * <p></p>
-     * If a field in the object has the {@link HasDefaultValue} annotation then no
+     * If a field in the object has the {@ link HasDefaultValue} annotation then no
      * exception will be thrown if the json does not contain a value.
      * <p></p>
-     * Fields in the object with the {@link OneOf} annotation must have one of the
+     * Fields in the object with the {@ link OneOf} annotation must have one of the
      * fields in the request data.
      * <p></p>
      * <ul>
-     * <li>{@link String}</li>
-     * <li>{@link Integer}</li>
-     * <li>{@link Float}</li>
-     * <li>{@link Double}</li>
-     * <li>{@link Short}</li>
-     * <li>{@link Boolean}</li>
-     * <li>{@link Character}</li>
-     * <li>{@link Byte}</li>
-     * <li>{@link Enum}</li>
+     * <li>{@ link String}</li>
+     * <li>{@ link Integer}</li>
+     * <li>{@ link Float}</li>
+     * <li>{@ link Double}</li>
+     * <li>{@ link Short}</li>
+     * <li>{@ link Boolean}</li>
+     * <li>{@ link Character}</li>
+     * <li>{@ link Byte}</li>
+     * <li>{@ link Enum}</li>
      * <li>PJsonObject</li>
      * <li>URL</li>
      * <li>Any enum</li>
@@ -220,7 +220,7 @@ public abstract class ReflectiveAttribute<Value> implements Attribute {
     public abstract Value createValue(Template template);
 
     /**
-     * Uses reflection on the object created by {@link #createValue(Template)} to
+     * Uses reflection on the object created by {@ link #createValue(Template)} to
      * create the options.
      * <p></p>
      * The public final fields are written as the field name as the key and the value as the value.
@@ -228,7 +228,7 @@ public abstract class ReflectiveAttribute<Value> implements Attribute {
      * The public (non-final) mandatory fields are written as part of clientParams and are written with the
      * field name as the key and the field type as the value.
      * <p></p>
-     * The public (non-final) {@link HasDefaultValue} fields are written as part of
+     * The public (non-final) {@ link HasDefaultValue} fields are written as part of
      * clientOptions and are written with the field name as the key and an object as a value with a type
      * property with the type and a default property containing the default value.
      *

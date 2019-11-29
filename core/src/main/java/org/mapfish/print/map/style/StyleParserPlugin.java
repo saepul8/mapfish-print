@@ -9,7 +9,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 /**
- * A plugin used for loading {@link Style} objects from a string.
+ * A plugin used for loading {@ link Style} objects from a string.
  * <p>
  * The string might be json, css, url, whatever.
  */

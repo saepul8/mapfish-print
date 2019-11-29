@@ -3,7 +3,7 @@ package org.mapfish.print.processor.http;
 import org.mapfish.print.processor.InputOutputValue;
 
 /**
- * The parameter for a processors that have {@link org.mapfish.print.http.MfClientHttpRequestFactory}.
+ * The parameter for a processors that have {@ link org.mapfish.print.http.MfClientHttpRequestFactory}.
  */
 public class ClientHttpFactoryProcessorParam {
     /**

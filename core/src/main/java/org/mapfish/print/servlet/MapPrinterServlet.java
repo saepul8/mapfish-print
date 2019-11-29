@@ -121,7 +121,7 @@ public class MapPrinterServlet extends BaseMapServlet {
     /**
      * If the job is done (value is true) or not (value is false).
      * <p></p>
-     * Part of the {@link #getStatus(String, String, javax.servlet.http.HttpServletRequest,
+     * Part of the {@ link #getStatus(String, String, javax.servlet.http.HttpServletRequest,
      * javax.servlet.http.HttpServletResponse)} response.
      */
     public static final String JSON_DONE = "done";
@@ -134,7 +134,7 @@ public class MapPrinterServlet extends BaseMapServlet {
      * <li>cancelled</li>
      * <li>error</li>
      * </ul>
-     * Part of the {@link #getStatus(String, String, javax.servlet.http.HttpServletRequest,
+     * Part of the {@ link #getStatus(String, String, javax.servlet.http.HttpServletRequest,
      * javax.servlet.http.HttpServletResponse)} response
      */
     public static final String JSON_STATUS = "status";
@@ -142,14 +142,14 @@ public class MapPrinterServlet extends BaseMapServlet {
      * The elapsed time in ms from the point the job started. If the job is finished, this is the duration it
      * took to process the job.
      * <p></p>
-     * Part of the {@link #getStatus(String, String, javax.servlet.http.HttpServletRequest,
+     * Part of the {@ link #getStatus(String, String, javax.servlet.http.HttpServletRequest,
      * javax.servlet.http.HttpServletResponse)} response.
      */
     public static final String JSON_ELAPSED_TIME = "elapsedTime";
     /**
      * A rough estimate for the time in ms the job still has to wait in the queue until it starts processing.
      * <p></p>
-     * Part of the {@link #getStatus(String, String, javax.servlet.http.HttpServletRequest,
+     * Part of the {@ link #getStatus(String, String, javax.servlet.http.HttpServletRequest,
      * javax.servlet.http.HttpServletResponse)} response.
      */
     public static final String JSON_WAITING_TIME = "waitingTime";

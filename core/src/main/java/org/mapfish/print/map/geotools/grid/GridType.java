@@ -28,7 +28,7 @@ public enum GridType {
     }
 
     /**
-     * The code for getting the features and default style for the {@link GridType}.
+     * The code for getting the features and default style for the {@ link GridType}.
      */
     interface GridTypeStrategy {
         /**

@@ -15,7 +15,7 @@ public interface ConfigurableRequest extends ClientHttpRequest {
     HttpRequestBase getUnderlyingRequest();
 
     /**
-     * Set the current configuration object.  This should only be called by {@link
+     * Set the current configuration object.  This should only be called by {@ link
      * org.mapfish.print.http.ConfigFileResolvingHttpRequestFactory}.
      *
      * @param configuration the config object for the current print job.

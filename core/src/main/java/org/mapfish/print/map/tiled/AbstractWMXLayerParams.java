@@ -18,10 +18,10 @@ public abstract class AbstractWMXLayerParams extends AbstractTiledLayerParams {
 
     private final Multimap<String, String> additionalCustomParam = HashMultimap.create();
     /**
-     * Custom query parameters to use when making http requests.  These are related to {@link
+     * Custom query parameters to use when making http requests.  These are related to {@ link
      * #mergeableParams} except they are the parameters that will prevent two layers from the same server from
-     * being merged into a single request with both layers. See {@link #mergeableParams} for a more detailed
-     * example of the difference between {@link #mergeableParams} and {@link #customParams}.
+     * being merged into a single request with both layers. See {@ link #mergeableParams} for a more detailed
+     * example of the difference between {@ link #mergeableParams} and {@ link #customParams}.
      * <p></p>
      * The json should look something like:
      * <pre><code>
@@ -50,8 +50,8 @@ public abstract class AbstractWMXLayerParams extends AbstractTiledLayerParams {
      * be merged.
      * <p></p>
      * Compare that to DPI parameter (for QGIS wms mapserver).  if two layers have different DPI then the
-     * layers cannot be merged.  In this case the DPI should <em>NOT</em> be one of the {@link
-     * #mergeableParams} it should be one of the {@link #customParams}.
+     * layers cannot be merged.  In this case the DPI should <em>NOT</em> be one of the {@ link
+     * #mergeableParams} it should be one of the {@ link #customParams}.
      */
     @HasDefaultValue
     public PJsonObject mergeableParams;
@@ -76,7 +76,7 @@ public abstract class AbstractWMXLayerParams extends AbstractTiledLayerParams {
     }
 
     /**
-     * Read the {@link #customParams} into a Multimap.
+     * Read the {@ link #customParams} into a Multimap.
      */
     public final Multimap<String, String> getCustomParams() {
         Multimap<String, String> result = convertToMultiMap(this.customParams);
@@ -85,7 +85,7 @@ public abstract class AbstractWMXLayerParams extends AbstractTiledLayerParams {
     }
 
     /**
-     * Read the {@link #mergeableParams} into a Multimap.
+     * Read the {@ link #mergeableParams} into a Multimap.
      */
     public final Multimap<String, String> getMergeableParams() {
         return convertToMultiMap(this.mergeableParams);

@@ -133,7 +133,7 @@ public final class TableProcessor extends AbstractProcessor<TableProcessor.Input
      * <p></p>
      * Note: The type returned by the column converter must match the type in the jasper template.
      *
-     * @param columnConverters Map from column name -&gt; {@link TableColumnConverter}
+     * @param columnConverters Map from column name -&gt; {@ link TableColumnConverter}
      */
     public void setColumns(final Map<String, TableColumnConverter<?>> columnConverters) {
         this.columnConverterMap = columnConverters;
@@ -147,7 +147,7 @@ public final class TableProcessor extends AbstractProcessor<TableProcessor.Input
      * converters are applied to every cell of the table (except for the cells of those columns that are
      * assigned a specific converter).
      *
-     * @param converters A list of {@link TableColumnConverter}s.
+     * @param converters A list of {@ link TableColumnConverter}s.
      */
     public void setConverters(final List<TableColumnConverter<?>> converters) {
         this.converters = converters;

@@ -37,8 +37,8 @@ public abstract class AbstractMfClientHttpRequestFactoryWrapper implements MfCli
 
 
     /**
-     * This implementation simply calls {@link #createRequest(URI, HttpMethod, MfClientHttpRequestFactory)}
-     * (if the matchers are OK)  with the wrapped request factory provided to the {@linkplain
+     * This implementation simply calls {@ link #createRequest(URI, HttpMethod, MfClientHttpRequestFactory)}
+     * (if the matchers are OK)  with the wrapped request factory provided to the {@ linkplain
      * #AbstractMfClientHttpRequestFactoryWrapper(MfClientHttpRequestFactory, UriMatchers, boolean)
      * constructor}.
      *
@@ -59,9 +59,9 @@ public abstract class AbstractMfClientHttpRequestFactoryWrapper implements MfCli
     }
 
     /**
-     * Create a new {@link ClientHttpRequest} for the specified URI and HTTP method by using the passed-on
+     * Create a new {@ link ClientHttpRequest} for the specified URI and HTTP method by using the passed-on
      * request factory.
-     * <p>Called from {@link #createRequest(URI, HttpMethod)}.
+     * <p>Called from {@ link #createRequest(URI, HttpMethod)}.
      *
      * @param uri the URI to create a request for
      * @param httpMethod the HTTP method to execute

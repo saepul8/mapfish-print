@@ -4,10 +4,10 @@ import java.lang.annotation.ElementType;
 import java.lang.annotation.Target;
 
 /**
- * Indicates that the annotated field or can satisfy the {@link org.mapfish.print.parser.OneOf} requirements
+ * Indicates that the annotated field or can satisfy the {@ link org.mapfish.print.parser.OneOf} requirements
  * or can co-exist with that requirement.
  * <p></p>
- * If this annotation is present then {@link org.mapfish.print.parser.HasDefaultValue} is not required.
+ * If this annotation is present then {@ link org.mapfish.print.parser.HasDefaultValue} is not required.
  *
  * @see #org.mapfish.print.parser.OneOf
  */

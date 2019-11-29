@@ -8,7 +8,7 @@ import java.net.URL;
 import java.util.List;
 
 /**
- * Objects needed by the {@link org.mapfish.print.processor.jasper.LegendProcessor} (see
+ * Objects needed by the {@ link org.mapfish.print.processor.jasper.LegendProcessor} (see
  * <a href="processors.html#!prepareLegend">!prepareLegend</a> processor).
  * [[examples=verboseExample,legend_cropped]]
  */

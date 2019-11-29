@@ -53,7 +53,7 @@ public final class OverviewMapAttribute extends GenericMapAttribute {
     }
 
     /**
-     * The value of {@link MapAttribute}.
+     * The value of {@ link MapAttribute}.
      */
     public final class OverviewMapAttributeValues extends GenericMapAttribute.GenericMapAttributeValues {
 

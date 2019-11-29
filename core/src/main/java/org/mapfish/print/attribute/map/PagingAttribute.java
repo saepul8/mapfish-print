@@ -57,7 +57,7 @@ public final class PagingAttribute extends ReflectiveAttribute<PagingAttribute.P
          * part of the report one can easily see where in the complete map the sub-map fits, even without
          * looking at the labelling.
          * <p>
-         * For options see: {@link org.mapfish.print.attribute.map.AreaOfInterest.AoiDisplay}
+         * For options see: {@ link org.mapfish.print.attribute.map.AreaOfInterest.AoiDisplay}
          * </p>
          * <p>
          * By default the rendering in the <a href="index.html#/attributes?location=!map">map attribute's</a>

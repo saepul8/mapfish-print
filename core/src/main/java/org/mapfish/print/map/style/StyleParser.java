@@ -18,7 +18,7 @@ import java.util.Optional;
 import javax.annotation.Nonnull;
 
 /**
- * Parse a style using all the available {@link StyleParserPlugin} registered with the spring application
+ * Parse a style using all the available {@ link StyleParserPlugin} registered with the spring application
  * context.
  */
 public final class StyleParser {

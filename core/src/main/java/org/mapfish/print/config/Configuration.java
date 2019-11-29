@@ -146,7 +146,7 @@ public class Configuration implements ConfigurationObject {
     }
 
     /**
-     * Either use the provided value (renderAsSvg) or if it is null then use {@link #defaultToSvg}.
+     * Either use the provided value (renderAsSvg) or if it is null then use {@ link #defaultToSvg}.
      *
      * @param renderAsSvg the value to use if non-null.
      */
@@ -187,8 +187,8 @@ public class Configuration implements ConfigurationObject {
     }
 
     /**
-     * Get the http credentials.  Should also getProxies since {@link org.mapfish.print.http.HttpProxy} is a
-     * subclass of {@link org.mapfish.print.http.HttpCredential}.
+     * Get the http credentials.  Should also getProxies since {@ link org.mapfish.print.http.HttpProxy} is a
+     * subclass of {@ link org.mapfish.print.http.HttpCredential}.
      */
     public final List<HttpCredential> getCredentials() {
         return this.credentials;
@@ -220,7 +220,7 @@ public class Configuration implements ConfigurationObject {
      * Configuration for proxying http requests.  Each proxy can be configured with authentication and with
      * the uris that they apply to.
      * <p></p>
-     * See {@link org.mapfish.print.http.HttpProxy} for details on how to configure them.
+     * See {@ link org.mapfish.print.http.HttpProxy} for details on how to configure them.
      *
      * @param proxies the proxy configuration objects
      */
@@ -261,7 +261,7 @@ public class Configuration implements ConfigurationObject {
     }
 
     /**
-     * The default output file name of the report.  This can be overridden by {@link
+     * The default output file name of the report.  This can be overridden by {@ link
      * org.mapfish.print.config.Template#setOutputFilename(String)} and the outputFilename parameter in the
      * request JSON.
      * <p>

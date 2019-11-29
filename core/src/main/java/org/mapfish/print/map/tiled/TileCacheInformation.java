@@ -56,7 +56,7 @@ public abstract class TileCacheInformation {
      * Create the http request for loading the image at the indicated area and the indicated size.
      *
      * @param httpRequestFactory the factory to use for making http requests
-     * @param commonUrl the uri that is common to all tiles.  See {@link #createCommonUrl()}
+     * @param commonUrl the uri that is common to all tiles.  See {@ link #createCommonUrl()}
      * @param tileBounds the bounds of the image in world coordinates
      * @param tileSizeOnScreen the size of the tile on the screen or on the image.
      * @param column the column index of the tile from the origin of the tile cache.

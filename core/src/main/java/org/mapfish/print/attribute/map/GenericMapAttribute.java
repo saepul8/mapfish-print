@@ -27,7 +27,7 @@ import java.util.Map;
 import java.util.Optional;
 
 /**
- * Generic attributes for {@link org.mapfish.print.processor.map.CreateMapProcessor} and {@link
+ * Generic attributes for {@ link org.mapfish.print.processor.map.CreateMapProcessor} and {@ link
  * org.mapfish.print.processor.map.CreateOverviewMapProcessor}.
  */
 public abstract class GenericMapAttribute
@@ -319,7 +319,7 @@ public abstract class GenericMapAttribute
     }
 
     /**
-     * The value of {@link GenericMapAttribute}.
+     * The value of {@ link GenericMapAttribute}.
      */
     public abstract class GenericMapAttributeValues {
         /**
@@ -516,13 +516,13 @@ public abstract class GenericMapAttribute
         public abstract Double getDpi();
 
         /**
-         * Return the JSON layer definition. This method is abstract for the same reasons as {@link
+         * Return the JSON layer definition. This method is abstract for the same reasons as {@ link
          * #getDpi()}.
          */
         public abstract PArray getRawLayers();
 
         /**
-         * Set the JSON layer definition. This method is abstract for the same reasons as {@link #getDpi()}.
+         * Set the JSON layer definition. This method is abstract for the same reasons as {@ link #getDpi()}.
          *
          * @param layers the new layers
          */

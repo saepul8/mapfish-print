@@ -28,16 +28,16 @@ import static org.mapfish.print.parser.ParserUtils.getAllAttributeNames;
 import static org.mapfish.print.parser.ParserUtils.getAttributeNames;
 
 /**
- * This class parses json parameter objects into the parameter object taken by {@link
+ * This class parses json parameter objects into the parameter object taken by {@ link
  * org.mapfish.print.map.MapLayerFactoryPlugin} instances and into
- * {@link org.mapfish.print.attribute.ReflectiveAttribute}
+ * {@ link org.mapfish.print.attribute.ReflectiveAttribute}
  * value objects
  * <p></p>
- * Essentially it maps the keys in the json object to public fields in the object obtained from the {@link
+ * Essentially it maps the keys in the json object to public fields in the object obtained from the {@ link
  * org.mapfish.print.map.MapLayerFactoryPlugin#createParameter()} method.
  * <p></p>
  * There is a more explicit explanation in
- * {@link org.mapfish.print.attribute.ReflectiveAttribute#createValue(org.mapfish.print.config.Template)}
+ * {@ link org.mapfish.print.attribute.ReflectiveAttribute#createValue(org.mapfish.print.config.Template)}
  *
  * @see #org.mapfish.print.attribute.ReflectiveAttribute
  * @see #org.mapfish.print.map.MapLayerFactoryPlugin
@@ -59,7 +59,7 @@ public final class MapfishParser {
      * @param objectToPopulate the parameter object that will be passed to the layer factory or is the
      *         attribute value.
      * @param extraPropertyToIgnore An array of properties to ignore in request data.  For example
-     *         Layers do not need "type" but the property has to be there for {@link
+     *         Layers do not need "type" but the property has to be there for {@ link
      *         org.mapfish.print.attribute.map.MapAttribute} to be able to choose the correct plugin.
      */
     public static void parse(

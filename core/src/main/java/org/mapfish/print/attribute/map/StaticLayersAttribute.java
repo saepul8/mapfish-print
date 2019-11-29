@@ -8,7 +8,7 @@ import org.mapfish.print.wrapper.PArray;
 import java.util.List;
 
 /**
- * <p>The attributes for the {@link org.mapfish.print.processor.map.AddStaticLayersProcessor} (see
+ * <p>The attributes for the {@ link org.mapfish.print.processor.map.AddStaticLayersProcessor} (see
  * <a href="processors.html#!addBackgroundLayers">!addBackgroundLayers</a> and
  * <a href="processors.html#!addOverlayLayers">!addOverlayLayers</a> processor) which adds the layers in this
  * attribute to the layers in the map.  The typical use is to add the background or overlay layers as the
@@ -39,7 +39,7 @@ public final class StaticLayersAttribute
     public static final class StaticLayersAttributeValue {
         /**
          * An array of layers (the same as for
-         * {@link org.mapfish.print.attribute.map.MapAttribute.MapAttributeValues#layers}).
+         * {@ link org.mapfish.print.attribute.map.MapAttribute.MapAttributeValues#layers}).
          * <p>
          * These layers will be added to the map.
          */
