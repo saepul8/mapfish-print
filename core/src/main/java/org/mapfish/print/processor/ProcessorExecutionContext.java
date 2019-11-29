@@ -121,8 +121,8 @@ public final class ProcessorExecutionContext {
     }
 
     /**
-     * Verify that all processors have finished executing atomically (within the same lock as {@ link
-     * #finished(ProcessorGraphNode)} and {@ link #isFinished(ProcessorGraphNode)} is within.
+     * Verify that all processors have finished executing atomically (within the same lock as {link
+     * #finished(ProcessorGraphNode)} and {link #isFinished(ProcessorGraphNode)} is within.
      *
      * @param processorNodes the node to check for completion.
      */

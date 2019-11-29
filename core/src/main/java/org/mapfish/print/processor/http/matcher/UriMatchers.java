@@ -12,7 +12,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Hold a list of {@ link URIMatcher} and implement the logic to see if any matches an URI.
+ * Hold a list of {link URIMatcher} and implement the logic to see if any matches an URI.
  */
 public final class UriMatchers {
     private static final Logger LOGGER = LoggerFactory.getLogger(UriMatchers.class);

@@ -15,7 +15,7 @@ import java.util.Set;
 import java.util.concurrent.ExecutorService;
 
 /**
- * Abstract class for FeatureSource based {@ link org.mapfish.print.map.MapLayerFactoryPlugin} objects.
+ * Abstract class for FeatureSource based {link org.mapfish.print.map.MapLayerFactoryPlugin} objects.
  *
  * @param <P> the type of parameter
  */

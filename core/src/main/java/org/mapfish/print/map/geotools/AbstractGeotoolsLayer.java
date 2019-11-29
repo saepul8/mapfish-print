@@ -154,7 +154,7 @@ public abstract class AbstractGeotoolsLayer implements MapLayer {
 
 
     /**
-     * Get the {@ link DataStore} object that contains the data for this layer.
+     * Get the {link DataStore} object that contains the data for this layer.
      *
      * @param httpRequestFactory the factory for making http requests
      * @param transformer the map transformer

@@ -11,7 +11,7 @@ import static org.junit.Assert.assertTrue;
 import static org.mapfish.print.processor.http.matcher.MatcherTestUtils.assertMatch;
 
 /**
- * Test for {@ link HostnameMatcher}
+ * Test for {link HostnameMatcher}
  */
 public class HostnameMatcherTest {
 

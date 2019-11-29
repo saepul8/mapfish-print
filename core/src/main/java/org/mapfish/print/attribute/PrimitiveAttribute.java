@@ -16,11 +16,11 @@ import javax.annotation.Nonnull;
 /**
  * A type of attribute whose value is a primitive type.
  * <ul>
- * <li>{@ link java.lang.String}</li>
- * <li>{@ link java.lang.String[]}</li>
- * <li>{@ link java.lang.Integer}</li>
- * <li>{@ link java.lang.Double}</li>
- * <li>{@ link java.lang.Boolean}</li>
+ * <li>{link java.lang.String}</li>
+ * <li>{link java.lang.String[]}</li>
+ * <li>{link java.lang.Integer}</li>
+ * <li>{link java.lang.Double}</li>
+ * <li>{link java.lang.Boolean}</li>
  * </ul>
  *
  * @param <Value> The value type of the attribute

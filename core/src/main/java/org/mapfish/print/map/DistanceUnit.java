@@ -192,7 +192,7 @@ public enum DistanceUnit {
      * DistanceUnit.M.convertTo(1.0, DistanceUnit.MM)==1000.0
      * </pre>
      *
-     * @param value a value in the same unit as this {@ link org.mapfish.print.map.DistanceUnit}
+     * @param value a value in the same unit as this {link org.mapfish.print.map.DistanceUnit}
      * @param targetUnit the unit to convert value to (from this unit)
      */
     public double convertTo(final double value, final DistanceUnit targetUnit) {

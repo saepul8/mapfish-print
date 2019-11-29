@@ -25,7 +25,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Configuration for storing the reports in a S3 compatible storage.
  * <p>
- * By default, authentication is done using the {@ link DefaultAWSCredentialsProviderChain} which uses
+ * By default, authentication is done using the {link DefaultAWSCredentialsProviderChain} which uses
  * Environment Variables, Java System Properties, Credential profiles file, ...
  */
 public class S3ReportStorage implements ReportStorage {

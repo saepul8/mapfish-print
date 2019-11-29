@@ -32,7 +32,7 @@ public final class StyleAttribute extends ReflectiveAttribute<StylesAttributeVal
     }
 
     /**
-     * The value of {@ link StyleAttribute}.
+     * The value of {link StyleAttribute}.
      */
     public static final class StylesAttributeValues {
         /**

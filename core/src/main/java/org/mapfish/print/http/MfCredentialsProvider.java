@@ -11,13 +11,13 @@ import java.util.List;
 
 
 /**
- * A Route planner that obtains credentials from the configuration that is currently in {@ link
+ * A Route planner that obtains credentials from the configuration that is currently in {link
  * org.mapfish.print.http.MfClientHttpRequestFactoryImpl#CURRENT_CONFIGURATION}.
  * <p></p>
- * If authentication is not found in configuration then it will fall back to {@ link
+ * If authentication is not found in configuration then it will fall back to {link
  * org.apache.http.impl.client.SystemDefaultCredentialsProvider}
  * <p></p>
- * {@ link MfClientHttpRequestFactoryImpl.Request} will set the correct configuration before the request is
+ * {link MfClientHttpRequestFactoryImpl.Request} will set the correct configuration before the request is
  * executed so that correct proxies will be set.
  */
 public final class MfCredentialsProvider implements CredentialsProvider {

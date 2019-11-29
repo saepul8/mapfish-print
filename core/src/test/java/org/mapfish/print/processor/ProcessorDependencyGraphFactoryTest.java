@@ -203,8 +203,8 @@ public class ProcessorDependencyGraphFactoryTest extends AbstractMapfishSpringTe
 
     /**
      * This is a test for an external dependency on a common input property, where the property has a
-     * different name for the two nodes. For example, this is the case for {@ link CreateOverviewMapProcessor}
-     * and {@ link SetStyleProcessor}. The map property for the overview map is called `overviewMap` in the
+     * different name for the two nodes. For example, this is the case for {link CreateOverviewMapProcessor}
+     * and {link SetStyleProcessor}. The map property for the overview map is called `overviewMap` in the
      * `CreateOverviewMapProcessor`, but `map` in the `SetStyleProcessor`.
      */
     @Test

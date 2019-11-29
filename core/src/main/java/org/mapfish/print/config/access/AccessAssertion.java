@@ -15,10 +15,10 @@ public interface AccessAssertion extends ConfigurationObject {
      * Checks that the user can access the resource.
      * <p></p>
      * Will throw
-     * {@ link org.springframework.security.authentication.AuthenticationCredentialsNotFoundException}
+     * {link org.springframework.security.authentication.AuthenticationCredentialsNotFoundException}
      * if the user has not logged in or supplied credentials.
      * <p></p>
-     * Will throw {@ link org.springframework.security.access.AccessDeniedException} if the user is logged in
+     * Will throw {link org.springframework.security.access.AccessDeniedException} if the user is logged in
      * but may not access the resource.
      *
      * @param resourceDescription a string describing the resource for logging and exception throwing

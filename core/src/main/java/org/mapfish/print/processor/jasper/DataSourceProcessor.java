@@ -38,19 +38,19 @@ import static org.mapfish.print.attribute.DataSourceAttribute.DataSourceAttribut
 
 /**
  * <p>A processor that will process a
- * {@ link org.mapfish.print.attribute.DataSourceAttribute.DataSourceAttributeValue} and construct a single
+ * {link org.mapfish.print.attribute.DataSourceAttribute.DataSourceAttributeValue} and construct a single
  * Jasper DataSource from the input values in the
- * {@ link org.mapfish.print.attribute.DataSourceAttribute.DataSourceAttributeValue}
+ * {link org.mapfish.print.attribute.DataSourceAttribute.DataSourceAttributeValue}
  * input object.</p>
  *
- * <p>The {@ link org.mapfish.print.attribute.DataSourceAttribute.DataSourceAttributeValue} has an array of
+ * <p>The {link org.mapfish.print.attribute.DataSourceAttribute.DataSourceAttributeValue} has an array of
  * maps, each map in the array equates to a row in the Jasper DataSource.</p>
  *
  * <p>The DataSourceProcessor can be configured with processors which will be used
  * to transform each map in the input array before constructing the final DataSource row.</p>
  *
  * <p>For example, each map in the array could be
- * {@ link org.mapfish.print.attribute.map.MapAttribute.MapAttributeValues} and the DataSourceProcessor could
+ * {link org.mapfish.print.attribute.map.MapAttribute.MapAttributeValues} and the DataSourceProcessor could
  * be configured with !createMap processor.  In this scenario each element in the array would be transformed
  * by the !createMap processor and thus each row of the resulting DataSource will contain the map subreport
  * created by the !createMap processor.</p>
@@ -117,7 +117,7 @@ public final class DataSourceProcessor
 
     /**
      * The key/name to use when putting the path to the compiled subreport in each row of the datasource. This
-     * is required if {@ link #reportTemplate} has been set.  The path to the compiled subreport will be added
+     * is required if {link #reportTemplate} has been set.  The path to the compiled subreport will be added
      * to each row in the datasource with this value as the key.  This allows the containing report to
      * reference the subreport in each row.
      *
@@ -129,7 +129,7 @@ public final class DataSourceProcessor
     }
 
     /**
-     * All the processors that will executed for each value retrieved from the {@ link
+     * All the processors that will executed for each value retrieved from the {link
      * org.mapfish.print.output.Values} object with the datasource name.  All output values from the processor
      * graph will be the datasource values.
      * <p></p>

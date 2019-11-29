@@ -62,7 +62,7 @@ final class GridUtils {
     }
 
     /**
-     * Calculate the where the grid first line should be drawn when spacing and origin are defined in {@ link
+     * Calculate the where the grid first line should be drawn when spacing and origin are defined in {link
      * GridParam}.
      *
      * @param bounds the map bounds

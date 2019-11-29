@@ -41,7 +41,7 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.fail;
 
 /**
- * Tests for {@ link org.mapfish.print.config.Configuration} class.
+ * Tests for {link org.mapfish.print.config.Configuration} class.
  */
 public class ConfigurationTest {
 

@@ -69,7 +69,7 @@ public final class WMTSLayerParam extends AbstractWMXLayerParams {
      * This can be null, if so then the default dimensions will be returned. If specified they must be
      * dimensions supported by the server.
      * <p></p>
-     * These are keys to the {@ link #dimensionParams}.
+     * These are keys to the {link #dimensionParams}.
      */
     @HasDefaultValue
     public String[] dimensions;

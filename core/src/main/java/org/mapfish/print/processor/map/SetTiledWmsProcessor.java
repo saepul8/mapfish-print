@@ -158,7 +158,7 @@ public class SetTiledWmsProcessor extends AbstractProcessor<SetTiledWmsProcessor
     }
 
     /**
-     * The input parameter object for {@ link SetFeaturesProcessor}.
+     * The input parameter object for {link SetFeaturesProcessor}.
      */
     public static final class Input {
         /**

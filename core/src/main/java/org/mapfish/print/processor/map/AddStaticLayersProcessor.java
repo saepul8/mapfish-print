@@ -36,7 +36,7 @@ public final class AddStaticLayersProcessor extends AbstractProcessor<AddStaticL
     }
 
     /**
-     * Set the position enumeration which indicates where the layers should be added to the map: {@ link
+     * Set the position enumeration which indicates where the layers should be added to the map: {link
      * org.mapfish.print.processor.map.AddStaticLayersProcessor.StaticLayerPosition}.
      *
      * @param position the position.

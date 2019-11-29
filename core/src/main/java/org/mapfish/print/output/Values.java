@@ -39,15 +39,15 @@ public final class Values {
     public static final String TASK_DIRECTORY_KEY = "tempTaskDirectory";
     /**
      * The key that is used to store
-     * {@ link org.mapfish.print.processor.http.MfClientHttpRequestFactoryProvider}.
+     * {link org.mapfish.print.processor.http.MfClientHttpRequestFactoryProvider}.
      */
     public static final String CLIENT_HTTP_REQUEST_FACTORY_KEY = "clientHttpRequestFactoryProvider";
     /**
-     * The key that is used to store {@ link org.mapfish.print.config.Template}.
+     * The key that is used to store {link org.mapfish.print.config.Template}.
      */
     public static final String TEMPLATE_KEY = "template";
     /**
-     * The key for the values object for the {@ link org.mapfish.print.config.PDFConfig} object.
+     * The key for the values object for the {link org.mapfish.print.config.PDFConfig} object.
      */
     public static final String PDF_CONFIG_KEY = "pdfConfig";
     /**

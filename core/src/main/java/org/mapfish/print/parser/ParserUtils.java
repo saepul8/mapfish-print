@@ -91,7 +91,7 @@ public final class ParserUtils {
     }
 
     /**
-     * Converts all non-final properties in {@ link #getAllAttributes(Class)} to a set of the attribute names.
+     * Converts all non-final properties in {link #getAllAttributes(Class)} to a set of the attribute names.
      *
      * @param classToInspect the class to inspect
      */
@@ -102,7 +102,7 @@ public final class ParserUtils {
     }
 
     /**
-     * Converts all properties in {@ link #getAllAttributes(Class)} to a set of the attribute names.
+     * Converts all properties in {link #getAllAttributes(Class)} to a set of the attribute names.
      *
      * @param classToInspect the class to inspect
      * @param filter a predicate that returns true when a attribute should be kept in resulting

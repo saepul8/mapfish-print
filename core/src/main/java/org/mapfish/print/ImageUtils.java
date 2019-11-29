@@ -15,7 +15,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Equivalent to {@ link ImageIO#write}, but handle errors.
+     * Equivalent to {link ImageIO#write}, but handle errors.
      *
      * @param im a <code>RenderedImage</code> to be written.
      * @param formatName a <code>String</code> containing the informal name of the format.
@@ -30,7 +30,7 @@ public final class ImageUtils {
     }
 
     /**
-     * Equivalent to {@ link ImageIO#write}, but handle errors.
+     * Equivalent to {link ImageIO#write}, but handle errors.
      *
      * @param im a <code>RenderedImage</code> to be written.
      * @param formatName a <code>String</code> containing the informal name of the format.

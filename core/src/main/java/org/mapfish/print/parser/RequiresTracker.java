@@ -20,7 +20,7 @@ class RequiresTracker {
     private Collection<Field> dependantsInJson = new ArrayList<>();
 
     /**
-     * Check if field has the {@ link org.mapfish.print.parser.Requires} annotation and registers it and its
+     * Check if field has the {link org.mapfish.print.parser.Requires} annotation and registers it and its
      * requirement.
      *
      * @param field the field to inspect
@@ -39,7 +39,7 @@ class RequiresTracker {
 
 
     /**
-     * Check if a field is part of a {@ link org.mapfish.print.parser.Requires} relationship and mark the
+     * Check if a field is part of a {link org.mapfish.print.parser.Requires} relationship and mark the
      * requirement as satisfied for the given field.
      *
      * @param field the field that is done.

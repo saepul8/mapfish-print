@@ -61,7 +61,7 @@ public class SetStyleProcessor extends
     }
 
     /**
-     * The input parameter object for {@ link SetStyleProcessor}.
+     * The input parameter object for {link SetStyleProcessor}.
      */
     public static final class Input {
         /**

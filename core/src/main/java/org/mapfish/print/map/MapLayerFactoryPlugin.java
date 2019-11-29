@@ -29,7 +29,7 @@ public interface MapLayerFactoryPlugin<Param> {
      * value in the json.
      * <p></p>
      * The same mechanism used for reading from the JSON into the param object is also used for parsing the
-     * JSON into {@ link org.mapfish.print.attribute.Attribute} value objects. See {@ link
+     * JSON into {link org.mapfish.print.attribute.Attribute} value objects. See {link
      * org.mapfish.print.attribute.ReflectiveAttribute#createValue(org.mapfish.print.config.Template)}()} for
      * details on how the parsing mechanism works.
      */

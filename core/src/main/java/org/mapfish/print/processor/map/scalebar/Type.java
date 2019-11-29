@@ -63,7 +63,7 @@ public enum Type {
     }
 
     /**
-     * Create a {@ link ScalebarDrawer} instance for this type.
+     * Create a {link ScalebarDrawer} instance for this type.
      *
      * @param graphics2d The graphics context.
      * @param settings Parameters for rendering the scalebar.

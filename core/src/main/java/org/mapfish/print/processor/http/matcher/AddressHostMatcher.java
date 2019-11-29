@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Compares ip address string and mask string by using {@ link java.net.InetAddress} comparison.
+ * Compares ip address string and mask string by using {link java.net.InetAddress} comparison.
  * <p>Example 1: accept any uri whose host matches the ip of www.camptocamp.com</p>
  * <pre><code>
  *     - !ipMatch

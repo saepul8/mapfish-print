@@ -17,10 +17,10 @@ import java.net.UnknownHostException;
 import java.util.List;
 
 /**
- * A Route planner that obtains proxies from the configuration that is currently in {@ link
+ * A Route planner that obtains proxies from the configuration that is currently in {link
  * org.mapfish.print.http.MfClientHttpRequestFactoryImpl#CURRENT_CONFIGURATION}.
  * <p>
- * {@ link MfClientHttpRequestFactoryImpl.Request} will set the correct configuration before the request is
+ * {link MfClientHttpRequestFactoryImpl.Request} will set the correct configuration before the request is
  * executed so that correct proxies will be set.
  */
 public final class MfRoutePlanner extends DefaultRoutePlanner {

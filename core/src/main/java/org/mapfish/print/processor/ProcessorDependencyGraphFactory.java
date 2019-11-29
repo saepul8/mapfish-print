@@ -30,7 +30,7 @@ import java.util.UUID;
 import static org.mapfish.print.parser.ParserUtils.getAllAttributes;
 
 /**
- * Class for constructing {@ link org.mapfish.print.processor.ProcessorDependencyGraph} instances.
+ * Class for constructing {link org.mapfish.print.processor.ProcessorDependencyGraph} instances.
  * <p></p>
  */
 public final class ProcessorDependencyGraphFactory {
@@ -164,11 +164,11 @@ public final class ProcessorDependencyGraphFactory {
     }
 
     /**
-     * Create a {@ link ProcessorDependencyGraph}.
+     * Create a {link ProcessorDependencyGraph}.
      *
      * @param processors the processors that will be part of the graph
      * @param attributes the list of attributes name
-     * @return a {@ link org.mapfish.print.processor.ProcessorDependencyGraph} constructed from the passed in
+     * @return a {link org.mapfish.print.processor.ProcessorDependencyGraph} constructed from the passed in
      *         processors
      */
     @SuppressWarnings("unchecked")

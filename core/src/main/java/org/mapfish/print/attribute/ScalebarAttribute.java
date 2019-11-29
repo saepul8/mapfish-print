@@ -18,7 +18,7 @@ import java.awt.Dimension;
 import java.util.List;
 
 /**
- * <p>The attributes for {@ link org.mapfish.print.processor.map.scalebar.CreateScalebarProcessor} (see
+ * <p>The attributes for {link org.mapfish.print.processor.map.scalebar.CreateScalebarProcessor} (see
  * <a href="processors.html#!createScalebar">!createScalebar</a> processor).</p>
  * [[examples=verboseExample,print_osm_new_york_EPSG_3857,print_osm_new_york_nosubreports]]
  */
@@ -94,7 +94,7 @@ public class ScalebarAttribute extends ReflectiveAttribute<ScalebarAttribute.Sca
     }
 
     /**
-     * The value of {@ link ScalebarAttribute}.
+     * The value of {link ScalebarAttribute}.
      */
     public class ScalebarAttributeValues {
 
@@ -264,7 +264,7 @@ public class ScalebarAttribute extends ReflectiveAttribute<ScalebarAttribute.Sca
         public String verticalAlign = VerticalAlign.BOTTOM.getLabel();
 
         /**
-         * Indicates if the scalebar graphic is rendered as SVG (will default to {@ link
+         * Indicates if the scalebar graphic is rendered as SVG (will default to {link
          * org.mapfish.print.config.Configuration#defaultToSvg}).
          */
         @HasDefaultValue

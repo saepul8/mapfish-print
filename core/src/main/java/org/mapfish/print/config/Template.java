@@ -65,7 +65,7 @@ public class Template implements ConfigurationObject, HasConfiguration {
     }
 
     /**
-     * The default output file name of the report (takes precedence over {@ link
+     * The default output file name of the report (takes precedence over {link
      * Configuration#setOutputFilename(String)}).  This can be overridden by the outputFilename parameter in
      * the request JSON.
      * <p>

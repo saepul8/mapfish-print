@@ -40,7 +40,7 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 /**
- * A JobManager backed by a {@ link java.util.concurrent.ThreadPoolExecutor}.
+ * A JobManager backed by a {link java.util.concurrent.ThreadPoolExecutor}.
  */
 public class ThreadPoolJobManager implements JobManager {
     /**
@@ -61,7 +61,7 @@ public class ThreadPoolJobManager implements JobManager {
     /**
      * The maximum number of threads that will be used for print jobs, this is not the number of threads used
      * by the system because there can be more used by the
-     * {@ link org.mapfish.print.processor.ProcessorDependencyGraph}
+     * {link org.mapfish.print.processor.ProcessorDependencyGraph}
      * when actually doing the printing.
      */
     private int maxNumberOfRunningPrintJobs = Runtime.getRuntime().availableProcessors();
@@ -98,7 +98,7 @@ public class ThreadPoolJobManager implements JobManager {
      */
     private boolean clustered = false;
     /**
-     * A comparator for comparing {@ link org.mapfish.print.servlet.job.impl.SubmittedPrintJob}s and
+     * A comparator for comparing {link org.mapfish.print.servlet.job.impl.SubmittedPrintJob}s and
      * prioritizing them.
      * <p></p>
      * For example it could be that requests from certain users (like executive officers) are prioritized over

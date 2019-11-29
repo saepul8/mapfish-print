@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 import javax.annotation.PostConstruct;
 
 /**
- * A simple implementation of {@ link org.mapfish.print.servlet.registry.Registry} based on a {@ link
+ * A simple implementation of {link org.mapfish.print.servlet.registry.Registry} based on a {link
  * java.util.HashMap}.
  */
 public class BasicRegistry implements Registry {

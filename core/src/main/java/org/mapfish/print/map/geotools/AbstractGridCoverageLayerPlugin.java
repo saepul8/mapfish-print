@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import static org.mapfish.print.Constants.Style.Raster.NAME;
 
 /**
- * Abstract class for {@ link org.mapfish.print.map.MapLayerFactoryPlugin} that created layers based on grid
+ * Abstract class for {link org.mapfish.print.map.MapLayerFactoryPlugin} that created layers based on grid
  * coverages.
  */
 public abstract class AbstractGridCoverageLayerPlugin {

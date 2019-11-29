@@ -37,7 +37,7 @@ public final class AreaOfInterest {
     @HasDefaultValue
     public AoiDisplay display = AoiDisplay.RENDER;
     /**
-     * A string representing the style.  The {@ link org.mapfish.print.map.style.StyleParserPlugin}s are used
+     * A string representing the style.  The {link org.mapfish.print.map.style.StyleParserPlugin}s are used
      * to load the style. Because of this the styleRef can be JSON, SLD, URL, file path, etc...
      */
     @HasDefaultValue
@@ -45,7 +45,7 @@ public final class AreaOfInterest {
     /**
      * If true the Area of Interest will be rendered as SVG (if display == RENDER).
      * <p></p>
-     * (will default to {@ link org.mapfish.print.config.Configuration#defaultStyle}).
+     * (will default to {link org.mapfish.print.config.Configuration#defaultStyle}).
      */
     @HasDefaultValue
     public Boolean renderAsSvg;

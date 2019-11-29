@@ -270,7 +270,7 @@ public final class LegendProcessor extends AbstractProcessor<LegendProcessor.Inp
     }
 
     /**
-     * The Input Parameter object for {@ link org.mapfish.print.processor.jasper.LegendProcessor}.
+     * The Input Parameter object for {link org.mapfish.print.processor.jasper.LegendProcessor}.
      */
     public static final class Input {
         /**

@@ -18,7 +18,7 @@ import java.util.Map;
 import javax.annotation.PostConstruct;
 
 /**
- * An {@ link org.eclipse.emf.ecore.resource.URIHandler} for caching XSDs or using local copies.
+ * An {link org.eclipse.emf.ecore.resource.URIHandler} for caching XSDs or using local copies.
  */
 class CachingUrihandler extends HTTPURIHandler {
     private static final Logger LOGGER = LoggerFactory.getLogger(CachingUrihandler.class);

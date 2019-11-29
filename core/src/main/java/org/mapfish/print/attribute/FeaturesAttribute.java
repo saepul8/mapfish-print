@@ -31,7 +31,7 @@ public final class FeaturesAttribute extends ReflectiveAttribute<FeaturesAttribu
     }
 
     /**
-     * The value of {@ link FeaturesAttribute}.
+     * The value of {link FeaturesAttribute}.
      */
     public static final class FeaturesAttributeValues {
         private final Template template;

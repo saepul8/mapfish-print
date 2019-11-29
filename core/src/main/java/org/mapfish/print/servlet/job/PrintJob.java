@@ -330,7 +330,7 @@ public abstract class PrintJob implements Callable<PrintJobResult> {
 
     /**
      * The security context that contains the information about the user that made the request.  This must be
-     * set on {@ link org.springframework.security.core.context.SecurityContextHolder} when the thread starts
+     * set on {link org.springframework.security.core.context.SecurityContextHolder} when the thread starts
      * executing.
      *
      * @param securityContext the conext object

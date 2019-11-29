@@ -25,8 +25,8 @@ import javax.annotation.Nonnull;
 
 /**
  * This request factory will attempt to load resources using
- * {@ link org.mapfish.print.config.Configuration#loadFile(String)}
- * and {@ link org.mapfish.print.config.Configuration#isAccessible(String)} to load the resources if the http
+ * {link org.mapfish.print.config.Configuration#loadFile(String)}
+ * and {link org.mapfish.print.config.Configuration#isAccessible(String)} to load the resources if the http
  * method is GET and will fallback to the normal/wrapped factory to make http requests.
  */
 public final class ConfigFileResolvingHttpRequestFactory implements MfClientHttpRequestFactory {

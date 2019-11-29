@@ -27,7 +27,7 @@ public interface Constants {
     String DEFAULT_ENCODING = System.getProperty("mapfish.file.encoding", "UTF-8");
 
     /**
-     * The default charset.  Depends on {@ link #DEFAULT_ENCODING}.
+     * The default charset.  Depends on {link #DEFAULT_ENCODING}.
      */
     Charset DEFAULT_CHARSET = Charset.forName(DEFAULT_ENCODING);
 

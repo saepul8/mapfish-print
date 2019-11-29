@@ -33,7 +33,7 @@ import java.net.URI;
 import java.util.List;
 
 /**
- * Processor to create overview maps. Internally {@ link CreateMapProcessor} is used.
+ * Processor to create overview maps. Internally {link CreateMapProcessor} is used.
  * <p></p>
  * Example Configuration:
  * <pre><code>

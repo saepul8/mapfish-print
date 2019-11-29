@@ -20,9 +20,9 @@ import javax.annotation.Nonnull;
  * Basic functionality of a processor.  Mostly utility methods.
  *
  * @param <In> A Java bean input parameter object of the execute method. Object is populated from the
- *         {@ link org.mapfish.print.output.Values} object.
+ *         {link org.mapfish.print.output.Values} object.
  * @param <Out> A Java bean output/return object from the execute method. properties will be put into
- *         the {@ link org.mapfish.print.output.Values} object so other processor can access the values.
+ *         the {link org.mapfish.print.output.Values} object so other processor can access the values.
  */
 public abstract class AbstractProcessor<In, Out> implements Processor<In, Out> {
     private final BiMap<String, String> inputMapper = HashBiMap.create();
@@ -189,7 +189,7 @@ public abstract class AbstractProcessor<In, Out> implements Processor<In, Out> {
     // CHECKSTYLE:ON
 
     /**
-     * Default implementation of {@ link ExecutionContext}.
+     * Default implementation of {link ExecutionContext}.
      */
     public static final class Context implements ExecutionContext {
         private final String jobId;

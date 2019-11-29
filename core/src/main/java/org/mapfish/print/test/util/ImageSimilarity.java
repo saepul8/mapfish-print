@@ -149,7 +149,7 @@ public final class ImageSimilarity {
     }
 
     /**
-     * Renders an SVG image into a {@ link BufferedImage}.
+     * Renders an SVG image into a {link BufferedImage}.
      */
     public static BufferedImage convertFromSvg(final URI svgFile, final int width, final int height)
             throws TranscoderException {
@@ -157,7 +157,7 @@ public final class ImageSimilarity {
     }
 
     /**
-     * Exports a rendered {@ link JasperPrint} to a {@ link BufferedImage}.
+     * Exports a rendered {link JasperPrint} to a {link BufferedImage}.
      */
     public static BufferedImage exportReportToImage(final JasperPrint jasperPrint, final Integer page)
             throws JRException {

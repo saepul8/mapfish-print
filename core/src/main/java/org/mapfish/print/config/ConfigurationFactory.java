@@ -16,7 +16,7 @@ import java.util.List;
 import javax.annotation.PostConstruct;
 
 /**
- * Strategy/plug-in for loading {@ link Configuration} objects.
+ * Strategy/plug-in for loading {link Configuration} objects.
  */
 public class ConfigurationFactory {
     private static final Logger LOGGER = LoggerFactory.getLogger(ConfigurationFactory.class);
