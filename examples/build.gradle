@@ -3,7 +3,7 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent
 apply plugin: 'war'
 apply plugin: 'org.gretty'
 
-def geoserverVersion = "2.16.0"
+def geoserverVersion = "2.15.2"
 
 repositories {
     maven { url 'http://repo.boundlessgeo.com/main' }
