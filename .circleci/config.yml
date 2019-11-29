@@ -10,7 +10,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/openjdk:8-jdk
+      - image: circleci/openjdk:11-jdk-stretch
 
     working_directory: ~/repo
 
@@ -24,7 +24,7 @@ jobs:
           command: sudo apt update
       - run:
           name: Install OS dependencies
-          command: sudo apt install ttf-liberation
+          command: sudo apt install fonts-liberation
 
       - run: git --no-pager diff --check `git log --oneline | tail -1 | cut --fields=1 --delimiter=' '`
 

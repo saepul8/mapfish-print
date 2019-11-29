@@ -162,20 +162,7 @@ public abstract class AbstractMapfishSpringTest {
     }
 
     protected String getExpectedImageName(String classifier, String baseDir) {
-        int javaVersion;
-
-        String fullVersion = System.getProperty("java.specification.version");
-
-        if (fullVersion.startsWith("1.6")) {
-            javaVersion = 6;
-        } else if (fullVersion.startsWith("1.7")) {
-            javaVersion = 7;
-        } else if (fullVersion.startsWith("1.8")) {
-            javaVersion = 8;
-        } else {
-            throw new RuntimeException(
-                    fullVersion + " is not yet supported in the tests.  Update this switch");
-        }
+        int javaVersion = Integer.parseInt(System.getProperty("java.specification.version"));
 
         String platformVersionName = "expectedSimpleImage" + classifier + "-" + normalizedOSName() +
                 "-jdk" + javaVersion + ".png";
