@@ -31,6 +31,9 @@ configurations {
     compile.exclude group: 'org.eclipse.emf', module: 'ecore'
     compile.exclude group: 'org.eclipse.emf', module: 'common'
     compile.exclude group: 'org.slf4j', module: 'slf4j-log4j12'
+    all.collect { configuration ->
+        configuration.exclude(group: 'commons-beanutils')
+    }
 }
 
 def examplesDir = "${project(':examples').projectDir}/src/test/resources/examples"
