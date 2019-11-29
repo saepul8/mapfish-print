@@ -34,8 +34,8 @@ public class HttpCredential implements ConfigurationObject {
      *
      * @param matchers the matchers to use to determine which requests the credentials can be used
      *         for
-     * @see #org.mapfish.print.processor.http.matcher.URIMatcher
-     * @see #org.mapfish.print.processor.http.RestrictUrisProcessor
+     * @see org.mapfish.print.processor.http.matcher.URIMatcher
+     * @see org.mapfish.print.processor.http.RestrictUrisProcessor
      */
     public void setMatchers(final List<? extends URIMatcher> matchers) {
         this.matchers.setMatchers(matchers);

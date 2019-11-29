@@ -65,10 +65,10 @@ import java.net.URI;
  * </p>
  * [[examples=http_processors]]
  *
- * @see #org.mapfish.print.processor.http.matcher.AcceptAllMatcher
- * @see #org.mapfish.print.processor.http.matcher.AddressHostMatcher
- * @see #org.mapfish.print.processor.http.matcher.DnsHostMatcher
- * @see #org.mapfish.print.processor.http.matcher.LocalHostMatcher
+ * @see org.mapfish.print.processor.http.matcher.AcceptAllMatcher
+ * @see org.mapfish.print.processor.http.matcher.AddressHostMatcher
+ * @see org.mapfish.print.processor.http.matcher.DnsHostMatcher
+ * @see org.mapfish.print.processor.http.matcher.LocalHostMatcher
  */
 public final class RestrictUrisProcessor extends AbstractClientHttpRequestFactoryProcessor {
     @Override
