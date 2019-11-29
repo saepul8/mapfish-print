@@ -10,7 +10,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/openjdk:12-jdk-stretch
+      - image: circleci/openjdk:13-jdk-buster
 
     working_directory: ~/repo
 
