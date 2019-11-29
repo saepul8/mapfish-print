@@ -36,6 +36,10 @@ jobs:
                 name: Build
                 command: ./gradlew build
 
+      - run:
+          command: git status
+          when: always
+
       - store_artifacts:
           path: examples/build/reports
           destination: reports/examples
