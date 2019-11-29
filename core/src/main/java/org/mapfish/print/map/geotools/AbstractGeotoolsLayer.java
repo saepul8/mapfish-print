@@ -1,6 +1,5 @@
 package org.mapfish.print.map.geotools;
 
-import org.geotools.data.DataStore;
 import org.geotools.geometry.jts.ReferencedEnvelope;
 import org.geotools.map.Layer;
 import org.geotools.map.MapContent;

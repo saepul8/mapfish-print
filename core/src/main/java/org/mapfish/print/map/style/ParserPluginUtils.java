@@ -3,7 +3,6 @@ package org.mapfish.print.map.style;
 import org.apache.commons.io.IOUtils;
 import org.checkerframework.checker.nullness.qual.Nullable;
 import org.geotools.styling.Style;
-import org.mapfish.print.config.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.client.ClientHttpRequest;

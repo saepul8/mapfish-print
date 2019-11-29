@@ -9,7 +9,6 @@ import org.mapfish.print.parser.CanSatisfyOneOf;
 import org.mapfish.print.parser.HasDefaultValue;
 import org.mapfish.print.parser.OneOf;
 import org.mapfish.print.parser.Requires;
-import org.mapfish.print.processor.map.CreateMapProcessor;
 import org.mapfish.print.wrapper.PArray;
 import org.mapfish.print.wrapper.json.PJsonArray;
 import org.opengis.referencing.FactoryException;
