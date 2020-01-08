@@ -28,7 +28,7 @@ jobs:
 
       - run: git --no-pager diff --check `git log --oneline | tail -1 | cut --fields=1 --delimiter=' '`
 
-      - run: circleci/test-eof-newline
+      - run: ci/test-eof-newline
 
       - gradle/with_cache:
           steps:

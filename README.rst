@@ -1,6 +1,3 @@
-.. image:: https://circleci.com/gh/mapfish/mapfish-print/tree/master.svg?style=svg
-    :target: https://circleci.com/gh/mapfish/mapfish-print/tree/master
-
 Please read the documentation available here:
 http://mapfish.github.io/mapfish-print/
 

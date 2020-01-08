@@ -1,0 +1,23 @@
+name: summon
+
+on:
+  push:
+  schedule:
+    - cron:  '0 0 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    name: summon
+    env:
+      PATH: /home/runner/.linuxbrew/bin:/usr/local/bin:/usr/bin:/bin
+    steps:
+      - run: echo $HOME
+      - run: pwd
+      - run: id
+      - run: wget -q -O- https://api.bintray.com/orgs/gopasspw/keys/gpg/public.key | sudo apt-key add -
+      - run: echo "deb https://dl.bintray.com/gopasspw/gopass trusty main" | sudo tee /etc/apt/sources.list.d/gopass.list
+      - run: sudo apt update
+      - run: sudo apt install --yes linuxbrew-wrapper gopass build-essential
+      - run: brew install summon
+      - run: gopass setup --yes --remote git@github.com:camptocamp/geospatial-ci-pass.git --alias gs-ci --name "Stéphane Brunner" --email "stephane.brunner@camptocamp.com"
