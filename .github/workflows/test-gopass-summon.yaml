@@ -19,5 +19,11 @@ jobs:
       - run: echo "deb https://dl.bintray.com/gopasspw/gopass trusty main" | sudo tee /etc/apt/sources.list.d/gopass.list
       - run: sudo apt update
       - run: sudo apt install --yes linuxbrew-wrapper gopass build-essential
-      - run: brew install summon
-      - run: gopass setup --yes --remote git@github.com:camptocamp/geospatial-ci-pass.git --alias gs-ci --name "Stéphane Brunner" --email "stephane.brunner@camptocamp.com"
+      - run:
+          curl --show-error --silent --location
+          https://github.com/cyberark/summon/releases/download/v${SUMMON_VERSION}/summon-linux-amd64.tar.gz
+          -o - | tar xz summon -O > /usr/local/bin/summon &&
+          chmod +x /usr/local/bin/summon
+      - run: gopass init --store gs/ci
+      - run: gopass git remote add --store gs/ci origin git@github.com:camptocamp/geospatial-ci-pass.git
+      - run: summon -p gopass
