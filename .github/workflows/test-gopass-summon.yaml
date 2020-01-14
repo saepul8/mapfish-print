@@ -26,6 +26,7 @@ jobs:
           https://github.com/cyberark/summon/releases/download/v${SUMMON_VERSION}/summon-linux-amd64.tar.gz
           -o - | tar xz summon -O > /usr/local/bin/summon &&
           chmod +x /usr/local/bin/summon
+      - uses: actions/checkout@v1
       - run: gpg --quiet --batch --yes --decrypt --passphrase=$LARGE_SECRET_PASSPHRASE --output CI.asc CI.asc.gpg
         env:
           LARGE_SECRET_PASSPHRASE: ${{ secrets.LARGE_SECRET_PASSPHRASE }}
