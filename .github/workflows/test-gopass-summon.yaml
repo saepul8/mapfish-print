@@ -10,30 +10,12 @@ jobs:
     runs-on: ubuntu-18.04
     name: summon
     env:
-      GOPASS_VERSION: 1.8.4
-      SUMMON_VERSION: 0.8.0
       SUMMON_PROVIDER: /usr/local/bin/gopass
-#      PATH: /home/runner/.linuxbrew/bin:/usr/local/bin:/usr/bin:/bin
     steps:
-      - run: sudo chmod o+w /usr/local/bin/
-      - run:
-          curl --show-error --silent --location
-          https://github.com/gopasspw/gopass/releases/download/v${GOPASS_VERSION}/gopass-${GOPASS_VERSION}-linux-amd64.tar.gz
-          -o - | tar xz gopass-${GOPASS_VERSION}-linux-amd64/gopass -O > /usr/local/bin/gopass &&
-          chmod +x /usr/local/bin/gopass
-      - run:
-          curl --show-error --silent --location
-          https://github.com/cyberark/summon/releases/download/v${SUMMON_VERSION}/summon-linux-amd64.tar.gz
-          -o - | tar xz summon -O > /usr/local/bin/summon &&
-          chmod +x /usr/local/bin/summon
       - uses: actions/checkout@v1
-      - run: gpg --quiet --batch --yes --decrypt --passphrase=$LARGE_SECRET_PASSPHRASE --output CI.asc CI.asc.gpg
-        env:
-          LARGE_SECRET_PASSPHRASE: ${{ secrets.LARGE_SECRET_PASSPHRASE }}
-      - run: gpg --import CI.asc
-      - run: gopass init 30C9B913FD42EF13
-      - run: gopass --yes clone https://${GITHUB_TOKEN}@github.com/camptocamp/geospatial-ci-pass.git gs/ci --sync gitcli
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_GOPASS_CI_TOKEN }}
+      - uses: camptocamp/initialise-gopass-summon-action@v1
+        with:
+          large-secret-passphrase: ${{secrets.LARGE_SECRET_PASSPHRASE}}
+          github-gopass-ci-token: ${{secrets.GITHUB_GOPASS_CI_TOKEN}}
       - run: gopass gs/ci/github/token/gopass
       - run: "summon --yaml 'TEST: !var gs/ci/github/token/gopass' bash -c 'echo ${TEST}'"
