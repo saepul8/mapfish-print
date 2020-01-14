@@ -35,5 +35,5 @@ jobs:
       - run: gopass clone git@github.com:camptocamp/geospatial-ci-pass.git
       - run: gopass
       - run: gopass init --store gs/ci
-      - run: gopass git remote add --store gs/ci origin git@github.com:camptocamp/geospatial-ci-pass.git
+      - run: gopass git remote add --store gs/ci origin git@github.com:camptocamp/geospatial-ci-pass.git gs/ci
       - run: summon -p gopass
