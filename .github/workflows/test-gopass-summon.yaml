@@ -27,7 +27,7 @@ jobs:
           -o - | tar xz summon -O > /usr/local/bin/summon &&
           chmod +x /usr/local/bin/summon
       - run: gpg --quiet --batch --yes --decrypt --passphrase=$LARGE_SECRET_PASSPHRASE --output CI.aes CI.aes.gpg
-        with:
+        env:
           LARGE_SECRET_PASSPHRASE: ${{ secrets.LARGE_SECRET_PASSPHRASE }}
       - run: gpg --import CI.aes
       - run: gopass init --store gs/ci
