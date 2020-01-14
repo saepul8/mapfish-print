@@ -12,7 +12,7 @@ jobs:
     env:
       GOPASS_VERSION: 1.8.4
       SUMMON_VERSION: 0.8.0
-      SUMMON_PROVIDER: usr/local/bin/gopass
+      SUMMON_PROVIDER: /usr/local/bin/gopass
 #      PATH: /home/runner/.linuxbrew/bin:/usr/local/bin:/usr/bin:/bin
     steps:
       - run: sudo chmod o+w /usr/local/bin/
