@@ -35,5 +35,5 @@ jobs:
       - run: gopass --yes clone https://${GITHUB_TOKEN}@github.com/camptocamp/geospatial-ci-pass.git gs/ci --sync gitcli
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_GOPASS_CI_TOKEN }}
+      - run: gopass gs/ci/github/token/gopass
       - run: "summon --yaml 'TEST: gs/ci/github/token/gopass' echo ${TEST}"
-      - run: summon --provider gopass
