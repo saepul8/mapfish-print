@@ -9,7 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-18.04
     name: summon
-#    env:
+    env:
+      SUMMON_VERSION: 0.8.0
 #      PATH: /home/runner/.linuxbrew/bin:/usr/local/bin:/usr/bin:/bin
     steps:
       - run: echo $HOME
@@ -25,6 +26,8 @@ jobs:
           https://github.com/cyberark/summon/releases/download/v${SUMMON_VERSION}/summon-linux-amd64.tar.gz
           -o - | tar xz summon -O > /usr/local/bin/summon &&
           chmod +x /usr/local/bin/summon
+      - run: gpg --quiet --batch --yes --decrypt --passphrase=$LARGE_SECRET_PASSPHRASE --output CI.aes CI.aes.gpg
+      - run: gpg --import CI.aes
       - run: gopass init --store gs/ci
       - run: gopass git remote add --store gs/ci origin git@github.com:camptocamp/geospatial-ci-pass.git
       - run: summon -p gopass
