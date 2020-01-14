@@ -19,7 +19,7 @@ jobs:
       - run: wget -q -O- https://api.bintray.com/orgs/gopasspw/keys/gpg/public.key | sudo apt-key add -
       - run: echo "deb https://dl.bintray.com/gopasspw/gopass trusty main" | sudo tee /etc/apt/sources.list.d/gopass.list
       - run: sudo apt update
-      - run: sudo apt install --yes linuxbrew-wrapper gopass build-essential
+      - run: sudo apt install --yes gopass
       - run: sudo chmod o+w /usr/local/bin/
       - run:
           curl --show-error --silent --location
@@ -31,11 +31,9 @@ jobs:
         env:
           LARGE_SECRET_PASSPHRASE: ${{ secrets.LARGE_SECRET_PASSPHRASE }}
       - run: gpg --import CI.asc
-      - run: summon --help
       - run: gopass init 30C9B913FD42EF13
       - run: gopass --yes clone https://${GITHUB_TOKEN}@github.com/camptocamp/geospatial-ci-pass.git gs/ci --sync gitcli
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_GOPASS_CI_TOKEN }}
-      - run: gopass
-      - run: summon --help
-      - run: summon -p gopass
+      - run: "summon --yaml 'TEST: gs/ci/github/token/gopass' echo ${TEST}"
+      - run: summon --provider gopass
