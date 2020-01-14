@@ -13,9 +13,9 @@ jobs:
       SUMMON_PROVIDER: /usr/local/bin/gopass
     steps:
       - uses: actions/checkout@v1
-      - uses: camptocamp/initialise-gopass-summon-action@v1
-#        with:
-#          large-secret-passphrase: ${{secrets.LARGE_SECRET_PASSPHRASE}}
-#          github-gopass-ci-token: ${{secrets.GITHUB_GOPASS_CI_TOKEN}}
+      - uses: camptocamp/initialise-gopass-summon-action@v1.3
+        with:
+          large-secret-passphrase: ${{secrets.LARGE_SECRET_PASSPHRASE}}
+          github-gopass-ci-token: ${{secrets.GITHUB_GOPASS_CI_TOKEN}}
       - run: gopass gs/ci/github/token/gopass
       - run: "summon --yaml 'TEST: !var gs/ci/github/token/gopass' bash -c 'echo ${TEST}'"
