@@ -31,9 +31,11 @@ jobs:
         env:
           LARGE_SECRET_PASSPHRASE: ${{ secrets.LARGE_SECRET_PASSPHRASE }}
       - run: gpg --import CI.asc
+      - run: summon --help
       - run: gopass init 30C9B913FD42EF13
-      - run: gopass --yes clone git@github.com:camptocamp/geospatial-ci-pass.git gs/ci --sync gitcli
+      - run: gopass --yes clone https://${GITHUB_TOKEN}@github.com/camptocamp/geospatial-ci-pass.git gs/ci --sync gitcli
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_GOPASS_CI_TOKEN }}
       - run: gopass
-      - run: gopass init --store gs/ci
-      - run: gopass git remote add --store gs/ci origin git@github.com:camptocamp/geospatial-ci-pass.git gs/ci
+      - run: summon --help
       - run: summon -p gopass
