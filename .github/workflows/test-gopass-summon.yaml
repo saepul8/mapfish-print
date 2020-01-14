@@ -17,5 +17,6 @@ jobs:
         with:
           large-secret-passphrase: ${{secrets.LARGE_SECRET_PASSPHRASE}}
           github-gopass-ci-token: ${{secrets.GITHUB_GOPASS_CI_TOKEN}}
+      - run: gopass
       - run: gopass gs/ci/test
       - run: "summon --yaml 'TEST: !var gs/ci/test' bash -c 'echo ${TEST}'"
