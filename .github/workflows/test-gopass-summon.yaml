@@ -11,6 +11,7 @@ jobs:
     name: summon
     env:
       SUMMON_VERSION: 0.8.0
+      SUMMON_PROVIDER: gopass
 #      PATH: /home/runner/.linuxbrew/bin:/usr/local/bin:/usr/bin:/bin
     steps:
       - run: echo $HOME
