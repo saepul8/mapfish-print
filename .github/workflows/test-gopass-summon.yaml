@@ -36,5 +36,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_GOPASS_CI_TOKEN }}
       - run: gopass gs/ci/github/token/gopass
-      - run: "summon --yaml 'TEST: gs/ci/github/token/gopass' echo ${TEST}"
+      - run: "summon --yaml 'TEST: gs/ci/github/token/gopass' bash -c 'echo ${TEST}'"
       - run: "summon --yaml 'TEST: gs/ci/github/token/gopass' set"
