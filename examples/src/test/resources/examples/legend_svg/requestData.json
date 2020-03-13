@@ -1,0 +1,26 @@
+{
+    "layout": "A4 portrait",
+    "outputFormat": "pdf",
+    "attributes": {
+        "map": {
+            "bbox": [100, -1, 106, 1.538],
+            "projection": "CRS:84",
+            "dpi": 144,
+            "rotation": 0,
+            "layers": [
+                {
+                  "type": "geojson",
+                  "style": "polygon",
+                  "geoJson":   "http://localhost:8080/examples/data/www/test-data/simple-squares-geojson.json"
+                }
+            ]
+        },
+        "legend": {
+            "name": "",
+            "classes": [{
+                "name": "SVG",
+                "icons": ["https://www.qgis.org/ca/_downloads/qgis-icon-black32.svg"]
+            }]
+        }
+    }
+}
