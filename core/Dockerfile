@@ -16,6 +16,8 @@ RUN rm ${CATALINA_HOME}/webapps/ROOT/WEB-INF/lib/logback-*.jar ${CATALINA_HOME}/
     chmod g+rw /usr/local/tomcat/webapps/ROOT/WEB-INF/classes /usr/local/tomcat/webapps/ROOT/WEB-INF/classes/*.xml && \
     adduser www-data root
 
+COPY fonts/* /usr/share/fonts/truetype/
+
 ENV LOG_LEVEL=INFO \
     SPRING_LOG_LEVEL=WARN \
     JASPER_LOG_LEVEL=WARN \

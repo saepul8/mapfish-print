@@ -12,7 +12,11 @@ services:
     image: mapfish_print_tester
     volumes:
       - ./examples/src/test/resources/examples:/usr/local/tomcat/webapps/ROOT/print-apps
+    environment:
+      CASC_YAML_MAX_ALIASES_ENV: 200
 
   tests:
     image: mapfish_print_builder
     command: sleep infinity
+    environment:
+      CASC_YAML_MAX_ALIASES_ENV: 200
