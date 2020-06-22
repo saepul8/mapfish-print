@@ -33,6 +33,11 @@ public class ConfigurationFactory {
     public final void init() {
         MapfishPrintConstructor constructor = new MapfishPrintConstructor(this.context);
         this.yaml = new Yaml(constructor);
+        if ("SNAKEYAML_MAXALIASESFORCOLLECTIONS" in System.getenv()) {
+            this.yaml.setMaxAliasesForCollections(Integer.parseInt(
+                System.getenv("SNAKEYAML_MAXALIASESFORCOLLECTIONS")
+            ))
+        }
     }
 
     /**
